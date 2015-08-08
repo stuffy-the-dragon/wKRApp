@@ -1,2 +1,2 @@
-from HairTodayWeb import app
+from wKRAPP import app
 app.run(debug=True)

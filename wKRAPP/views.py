@@ -1,4 +1,4 @@
-from HairTodayWeb import app
+from wKRAPP import app
 from flask import render_template, url_for
 
 @app.route('/')

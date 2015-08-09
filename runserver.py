@@ -1,2 +1,2 @@
-from wKRAPP import app
+from wKRApp import app
 app.run(debug=True)

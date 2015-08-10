@@ -4,9 +4,41 @@
     <div class="row">
         <div class="panel panel-default">
             <div class="panel-heading">
-                KRA for Henry Hugglemonster
+                KRA for <b>Henry Hugglemonster</b>
             </div>
             <div class="panel-body">
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Career level: <b id="value">C4</b><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">B1</a></li>
+                    <li><a href="#">B2</a></li>
+                    <li><a href="#">B3</a></li>
+                    <li><a href="#">B4</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">C1</a></li>
+                    <li><a href="#">C2</a></li>
+                    <li><a href="#">C3</a></li>
+                    <li><a href="#">C4</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">D1</a></li>
+                    <li><a href="#">D2</a></li>
+                    <li><a href="#">D3</a></li>
+                    <li><a href="#">D4</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">E1</a></li>
+                    <li><a href="#">E2</a></li>
+                    <li><a href="#">E3</a></li>
+                    <li><a href="#">E4</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Career ladder: <b id="value">RAD</b><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">RAD</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Project management</a></li>
+                  </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -65,4 +97,13 @@
         </div>
     </div>
 </div>
+
+<script>
+$(document).ready(function(){
+    $(".dropdown-menu li").click(function(){
+        var str = $(this).text()
+        $(this).find("#value").html(str)
+    });
+});
+</script>
 {% endblock %}

@@ -103,4 +103,13 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+        $(".panel").click(function(){
+            document.location.href = "{{ url_for('kra', empid='test123') }}"
+        });
+    });
+
+</script>
 {% endblock %}

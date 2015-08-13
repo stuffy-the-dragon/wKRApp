@@ -54,4 +54,3 @@ python runserver.py
 ## Documentation
 
 No documentation for the MVP phase yet.
-

@@ -1,0 +1,67 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  color: rgb(238, 239, 238);
+}
+.table{
+	  color: rgb(238, 239, 238);
+}
+h2 {
+    padding: 20px 20px 0px 0px;
+    color: rgb(0, 0, 0);
+}
+
+.container .text-muted {
+    margin: 20px 0;
+}
+
+.panel-heading
+{
+	color: #E6DEDE;
+}
+.panel-body 
+{ 
+    max-height: 656px; width: 100%; margin: 0; overflow-y: auto; 
+    background: none;
+}
+
+.panel-transparent {
+    background: none;
+}
+
+.panel-transparent .panel-body {
+    background: rgba(0, 0, 0, 0.79)!important;
+}
+
+.panel-transparent .panel-heading {
+    background: rgba(0, 0, 0, 0.79)!important;
+}
+
+.transparent {
+    background: rgba(0, 0, 0, 0.79)!important;
+}
+
+.page-shade .page-header {
+    background-color: #ffffff;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+

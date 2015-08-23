@@ -1,4 +1,4 @@
-wKRApp
+KRApp
 =========
 
 >KRApp-web is the web front-end for the KRApp (Key Responsibility Area Application).
@@ -7,7 +7,9 @@ wKRApp
 
 ## About
 
-This web front-end will be the main user interface to the KRApp. The KRApp intends to automate and ease the workflows associated with Key Responsibility Area documents used for performance evaluations in many organisations. 
+This web front-end will be the main user interface to the KRApp. 
+The KRApp intends to automate and ease the workflows associated with Key Responsibility Area documents used for performance evaluations in many organisations. 
+This web front-end is related to the [wKRApp project](https://github.com/stuffy-the-dragon/wKRApp) which specificity uses Flask as a sever
 
 
 ## Contributing Guidelines
@@ -31,10 +33,12 @@ Please ensure the python code adheres to [PEP 8](http://legacy.python.org/dev/pe
 ## Dependencies
 
 Bootstrap v3.3.5
+SB Admin 2
 
-## Running on local server
+## Server
 
+No server is provided for flexibility, therefore you are free to run any server of your choice.
 
 ## Documentation
 
-No documentation for the MVP phase yet.
+No documentation at this point.

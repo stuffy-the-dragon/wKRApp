@@ -321,7 +321,7 @@
 						<div class="form-group">
 							<label for="employeeID" class="col-sm-2 control-label">Employee ID</label>
 							<div class="col-sm-10">
-							  <input type="name" class="form-control" id="employeeID" placeholder="Employee ID">
+							  <input type="name" class="form-control" id="employeeID" placeholder="308625">
 							  <span class='help-inline'>* required</span>
 							</div>
 						</div>
@@ -329,14 +329,14 @@
 						<div class="form-group">
 							<label for="name" class="col-sm-2 control-label">Name</label>
 							<div class="col-sm-10">
-							  <input type="name" class="form-control" id="name" placeholder="Email">
+							  <input type="name" class="form-control" id="name" placeholder="">
 							  <span class='help-inline'>* required</span>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="username" class="col-sm-2 control-label">Username</label>
 							<div class="col-sm-10">
-								<input type="name" class="form-control" id="username" placeholder="Username">
+								<input type="name" class="form-control" id="username" placeholder="">
 								<span class='help-inline'>* required</span>
 							</div>
 						</div>
@@ -344,7 +344,7 @@
 						<div class="form-group">
 							<label for="telephone" class="col-sm-2 control-label">Telephone</label>
 							<div class="col-sm-10">
-							  <input type="email" class="form-control" id="telephone" placeholder="Telephone">
+							  <input type="email" class="form-control" id="telephone" placeholder="012 345 6789">
 							  
 							</div>
 						</div>
@@ -352,33 +352,31 @@
 						<div class="form-group">
 							<label for="email" class="col-sm-2 control-label">Role</label>
 							<div class="col-sm-10">
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle active" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-									Please select role here:
-									<span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-										<li><a href="#">User</a></li>
-										<li><a href="#">HR</a></li>
-										<li><a href="#">RGL</a></li>
-										<li><a href="#">CAM</a></li>
-										<li><a href="#">Admin</a></li>
-									</ul>
-								</div>
+                                <select class="form-control">
+                                    <option>Please select role here:</option>
+                                    <option>User</option>
+                                    <option>HR</option>
+                                    <option>RGL</option>
+                                    <option>CAM</option>
+                                    <option>Admin</option>
+                                </select>
 							  <span class='help-inline'>* required</span>
-							</div>
-						</div>
-					  
-						<div class="form-group">
-							<div class="col-sm-offset-6 col-sm-2">
-							  <button type="submit" class="btn btn-lg btn-success">Add User</button>
-							</div>
-							<div class="col-sm-2">
-							  <button type="submit" class="btn btn-lg btn-default">Cancel</button>
 							</div>
 						</div>
 					</form>
 				</div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form role="form">
+                        <div class="form-group">
+                            <button type="button" class="btn btn-success btn-lg btn-block">Add New User Account</button>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-default btn-lg btn-block">Cancel</button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <!-- /.row -->
         </div>

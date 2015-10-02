@@ -1,20 +1,12 @@
-<<<<<<< HEAD
 wKRApp
 =========
 
 >wKRApp is the web front-end for the KRApp (Key Responsibility Area Application).
-=======
-KRApp
-=========
-
->KRApp-web is the web front-end for the KRApp (Key Responsibility Area Application).
->>>>>>> KRApp-web/master
 
 -----
 
 ## About
 
-<<<<<<< HEAD
 This web front-end will be the main user interface to the KRApp. The KRApp intends to automate and ease the workflows associated with Key Responsibility Area documents used for performance evaluations in many organisations. This KRApp will be developed in several phases:
 
 - A Minimum Viable Prototype (MVP) will be created with just the front-end and mostly dummy data.
@@ -22,12 +14,6 @@ This web front-end will be the main user interface to the KRApp. The KRApp inten
 - The front-end will be continually refactored to use the working back-end functionality.
 
 This web front-end is created in Python with the [Flask framework](http://flask.pocoo.org/).
-=======
-This web front-end will be the main user interface to the KRApp. 
-The KRApp intends to automate and ease the workflows associated with Key Responsibility Area documents used for performance evaluations in many organisations. 
-This web front-end is related to the [wKRApp project](https://github.com/stuffy-the-dragon/wKRApp) which specificity uses Flask as a sever
-
->>>>>>> KRApp-web/master
 
 ## Contributing Guidelines
 
@@ -48,7 +34,6 @@ Please follow [AngularJS Git Commit Message Conventions](https://docs.google.com
 Please ensure the python code adheres to [PEP 8](http://legacy.python.org/dev/peps/pep-0008/)
 
 ## Dependencies
-<<<<<<< HEAD
 _Optional:_ It is recommended that you use a python virtual environment for development: [virtualenvwrapper](https://pypi.python.org/pypi/virtualenvwrapper)
 
 You can install the python dependencies with pip:
@@ -69,16 +54,3 @@ python runserver.py
 ## Documentation
 
 No documentation for the MVP phase yet.
-=======
-
-Bootstrap v3.3.5
-SB Admin 2
-
-## Server
-
-No server is provided for flexibility, therefore you are free to run any server of your choice.
-
-## Documentation
-
-No documentation at this point.
->>>>>>> KRApp-web/master

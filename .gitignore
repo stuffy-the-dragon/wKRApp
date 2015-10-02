@@ -54,8 +54,3 @@ coverage.xml
 docs/_build/
 
 # PyBuilder
-target/
-<<<<<<< HEAD
-=======
-KRApp/img/
->>>>>>> KRApp-web/master

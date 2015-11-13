@@ -6,7 +6,10 @@ from ipdb import set_trace
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        return render_template('team.html')
+        if request.form['email'] == 'admin@admin.com' or request.form['password'] == 'admin':
+            return render_template('admin.html')
+        else:
+            return render_template('team.html')
     return render_template('signin.html')
 
 
@@ -15,6 +18,34 @@ def kra():
     if request.method == 'POST':
         return render_template('kra.html')
     return render_template('kra.html')
+
+# THIS MAY BE A PROBLEM SINCE ANYONE CAN NAVIGATE TO THE ADMIN AND ALL TEMPLATES BELOW  WITHOUT A SIGNIN
+@app.route('/admin', methods=['GET'])
+def admin():
+    return render_template('admin.html')
+
+
+@app.route('/users', methods=['GET'])
+def users():
+    return render_template('users.html')
+
+
+@app.route('/user_roles', methods=['GET'])
+def user_roles():
+    return render_template('user_roles.html')
+
+
+@app.route('/workflow', methods=['GET'])
+def workflow():
+    return render_template('workflow.html')
+
+
+@app.route('/career_ladders', methods=['GET'])
+def career_ladders():
+    return render_template('career_ladders.html')
+
+
+
 
 
 @app.route('/new_role', methods=['GET', 'POST'])
@@ -29,17 +60,3 @@ def new_user():
     if request.method == 'POST':
         return render_template('new_user.html')
     return render_template('new_user.html')
-
-
-@app.route('/user_roles', methods=['GET', 'POST'])
-def user_roles():
-    if request.method == 'POST':
-        return render_template('user_roles.html')
-    return render_template('user_roles.html')
-
-
-@app.route('/workflow', methods=['GET', 'POST'])
-def workflow():
-    if request.method == 'POST':
-        return render_template('workflow.html')
-    return render_template('workflow.html')

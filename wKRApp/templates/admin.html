@@ -12,13 +12,13 @@
     <title>KRApp</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
 
     <!-- MetisMenu CSS -->
-    <link href="{{ url_for('static', filename='css/plugins/metisMenu/metisMenu.min.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/plugins/metisMenu/metisMenu.min.css')}}" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS -->
-    <link href="{{ url_for('static', filename='css/plugins/sb-admin-2.css" rel="stylesheet')}}">
+    <link href="{{ url_for('static', filename='css/plugins/sb-admin-2.css')}}" rel="stylesheet" type="text/css">
 
     <!-- Custom Fonts -->
     <link href="{{ url_for('static', filename='font-awesome-4.1.0/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="admin.html">KRApp</a>
+                <a class="navbar-brand" href="{{ url_for('admin') }}">KRApp</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -256,13 +256,13 @@
                     <ul class="nav" id="side-menu">
                         
                         <li>
-                            <a href="admin.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="{{ url_for('admin') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="users.html"><i class="fa fa-group fa-fw"></i> Users</a>
+                            <a href="{{ url_for('users') }}"><i class="fa fa-group fa-fw"></i> Users</a>
                         </li>
                         <li>
-                            <a href="user_roles.html"><i class="fa fa-sitemap fa-fw"></i> User Roles<span class="fa arrow"></span></a>
+                            <a href="{{ url_for('user_roles') }}"><i class="fa fa-sitemap fa-fw"></i> User Roles<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="#">User</a>
@@ -270,35 +270,35 @@
                                 <li>
                                     <a href="#">RGL</a>
                                 </li>
-								<li>
+                                <li>
                                     <a href="#">HR</a>
                                 </li>
                                 <li>
                                     <a href="#">CAM</a>
                                 </li>
-								<li>
+                                <li>
                                     <a href="#">Admin</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li class="active">
-                            <a href="career_ladders.html"><i class="fa fa-files-o fa-fw"></i> Career Ladders<span class="fa arrow"></span></a>
+                            <a href="{{ url_for('career_ladders') }}"><i class="fa fa-files-o fa-fw"></i> Career Ladders<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Research</a>
+                                    <a href="{{ url_for('career_ladders') }}">Research</a>
                                 </li>
                                 <li>
-                                    <a href="#">RAD</a>
+                                    <a href="{{ url_for('career_ladders') }}">RAD</a>
                                 </li>
-								<li>
-                                    <a href="#">Project Management</a>
+                                <li>
+                                    <a href="{{ url_for('career_ladders') }}">Project Management</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-						<li>
-                            <a href="workflow.html"><i class="fa fa-wrench fa-fw"></i> Workflow</a>
+                        <li>
+                            <a href="{{ url_for('workflow') }}"><i class="fa fa-wrench fa-fw"></i> Workflow</a>
                         </li>
                     </ul>
                 </div>

@@ -33,6 +33,10 @@
         <p class="error"><strong>Error:</strong> {{ error }} </p>
     {% endif %}
 
+    {% for message in get_flashed_messages() %}
+        {{ message }}
+    {% endfor %}
+
 </div> <!-- /container -->
 
 <script src=" {{ url_for('static', filename='js/jquery-2.1.4.min.js') }}"></script>

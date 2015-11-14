@@ -10,7 +10,7 @@ def index():
             return render_template('admin.html')
         else:
             return render_template('team.html')
-    return render_template('signin.html')
+    return render_template('signin.html', error=error)
 
 
 @app.route('/kra', methods=['GET', 'POST'])

@@ -1,17 +1,23 @@
 from wKRApp import app
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, render_template, url_for, request, redirect, session
 from ipdb import set_trace
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     error = None
     if request.method == 'POST':
         if request.form['username'] == 'Admin' or request.form['password'] == 'admin':
+            session['logged_in'] = True
             return render_template('admin.html')
         else:
             return render_template('team.html')
     return render_template('signin.html', error=error)
 
+@app.route('/logout')
+def logout():
+    session.pop('logged_in', None) 
+    return redirect(url_for('index'))
 
 @app.route('/kra', methods=['GET', 'POST'])
 def kra():

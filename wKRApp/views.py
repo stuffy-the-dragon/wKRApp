@@ -4,8 +4,9 @@ from ipdb import set_trace
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    error = None
     if request.method == 'POST':
-        if request.form['email'] == 'admin@admin.com' or request.form['password'] == 'admin':
+        if request.form['username'] == 'Admin' or request.form['password'] == 'admin':
             return render_template('admin.html')
         else:
             return render_template('team.html')

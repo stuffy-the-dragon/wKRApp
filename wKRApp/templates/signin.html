@@ -17,10 +17,10 @@
 
     <form class="form-signin" action="{{ url_for('index') }}" method=post>
         <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus value="{{ request.form.email }}">
+        <label for="inputUsername" class="sr-only">Email address</label>
+        <input type="username" name="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus value="{{ request.form.username }}">
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required value="{{ request.form.password }}>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required value="{{ request.form.password }}">
         <div class="checkbox">
             <label>
                 <input type="checkbox" name="remember-me" value="remember-me"> Remember me
@@ -28,6 +28,10 @@
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     </form>
+
+    {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }} </p>
+    {% endif %}
 
 </div> <!-- /container -->
 

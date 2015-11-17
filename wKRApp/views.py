@@ -60,7 +60,6 @@ def kra():
     return render_template('kra.html')
 
 
-# THIS MAY BE A PROBLEM SINCE ANYONE CAN NAVIGATE TO THE ADMIN AND ALL TEMPLATES BELOW  WITHOUT A SIGNIN
 @app.route('/admin')
 @login_required
 def admin():

@@ -1,0 +1,154 @@
+{% extends "base.html"%}
+{% block content %}
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Users</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+			<div class="row">
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+						<ul class="nav nav-pills nav-stacked">
+							<li class="active">
+								<a href="#">Active Users <small class='pull-right'><span class="badge">0</span></small></a>
+							</li>
+							<li>
+								<a href="#">Admins <small class='pull-right'><span class="badge">2</span></small></a>
+							</li>
+							<li>
+								<a href="#">Blocked <small class='pull-right'><span class="badge">0</span></small></a>
+							</li>
+							<li>
+								<a href="#">Destroyed <small class='pull-right'><span class="badge">0</span></small></a>
+							</li>
+							<hr>
+							<li class="sidebar-search">
+								<form accept-charset="UTF-8" action="" class="form-inline" method="get">
+									<div class='form-group'>
+										<input class="form-control" id="name" name="name" placeholder="Name, email or username" type="search" />
+									</div>
+									<button class="btn btn-default" type="button">
+										<i class="fa fa-search"></i>
+									</button>
+								</form>
+                            <!-- /input-group -->
+							</li>
+							<li>
+								<a > </a>
+							</li>
+						</ul>
+					</div>
+                </div>
+                <div class="col-md-9">
+                    <div class="panel panel-default">
+						<div class="panel-heading">
+							<strong>Users (2)</strong>
+							<a href="#" class="btn btn-primary btn-sm pull-right" role="button">New User</a>
+						</div>			
+						<ul class='list-group'>
+							<li class="list-group-item">
+								<i class='fa fa-user fa-fw'></i>
+								<a href="">Katekani Hlungwani <span class="badge">RGL</span></a>
+								<div class='pull-right'>
+									<span class='light'>
+										<i class='fa fa-envelope'></i>
+										<a class="light" href="mailto:mshabalala@xmail.co.za">mshabalala@xmail.co.za</a>
+									</span>
+									<a class="btn btn-xs btn-default" href="#">Edit</a>
+									<a class="btn btn-xs btn-warning" href="#">Block</a>
+									<a class="btn btn-xs btn-danger" href="#">Destroy</a>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<i class='fa fa-user fa-fw'></i>
+								<a href="">Katekani Hlungwani <span class="badge">User</span></a>
+								<div class='pull-right'>
+									<span class='light'>
+										<i class='fa fa-envelope'></i>
+										<a class="light" href="mailto:mshabalala@xmail.co.za">mshabalala@xmail.co.za</a>
+									</span>
+									<a class="btn btn-xs btn-default" href="#">Edit</a>
+									<a class="btn btn-xs btn-warning" href="#">Block</a>
+									<a class="btn btn-xs btn-danger" href="#">Destroy</a>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<i class='fa fa-user fa-fw'></i>
+								<a href="">Katekani Hlungwani <strong class='cred'>(Admin)</strong></a>
+								<div class='pull-right'>
+									<span class='light'>
+										<i class='fa fa-envelope'></i>
+										<a class="light" href="mailto:mshabalala@xmail.co.za">mshabalala@xmail.co.za</a>
+									</span>
+									<a class="btn btn-xs btn-default" href="#">Edit</a>
+									<a class="btn btn-xs btn-warning" href="#">Block</a>
+									<a class="btn btn-xs btn-danger" href="#">Destroy</a>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<i class='fa fa-user fa-fw'></i>
+								<a href="">Katekani Hlungwani <span class="badge">CAM</span></a>
+								<div class='pull-right'>
+									<span class='light'>
+										<i class='fa fa-envelope'></i>
+										<a class="light" href="mailto:mshabalala@xmail.co.za">mshabalala@xmail.co.za</a>
+									</span>
+									<a class="btn btn-xs btn-default" href="#">Edit</a>
+									<a class="btn btn-xs btn-warning" href="#">Block</a>
+									<a class="btn btn-xs btn-danger" href="#">Destroy</a>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<i class='fa fa-user fa-fw'></i>
+								<a href="">Katekani Hlungwani <span class="badge">HR</span></a>
+								<div class='pull-right'>
+									<span class='light'>
+										<i class='fa fa-envelope'></i>
+										<a class="light" href="mailto:mshabalala@xmail.co.za">mshabalala@xmail.co.za</a>
+									</span>
+									<a class="btn btn-xs btn-default" href="#">Edit</a>
+									<a class="btn btn-xs btn-warning" href="#">Block</a>
+									<a class="btn btn-xs btn-danger" href="#">Destroy</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+			<div class="row">
+                <div class="col-md-9 col-md-offset-3">
+					<ul class='pagination'>
+						<li class='prev'>
+						<a href="/admin/users" rel="prev">&lsaquo; Prev</a>
+						</li>
+
+						<li class='page active'>
+						<a href="/admin/users" rel="prev">1</a>
+						</li>
+
+						<li class='page '>
+						<a href="/admin/users?page=2">2</a>
+						</li>
+
+						<li class='page'>
+							<a href="/admin/users?page=3" rel="next">3</a>
+						</li>
+						<li class='page'>
+							<a href="/admin/users?page=4">4</a>
+						</li>
+						<li class='next'>
+							<a href="/admin/users?page=3" rel="next">Next &rsaquo;</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+        <!-- /#page-wrapper -->
+{% endblock %}
+

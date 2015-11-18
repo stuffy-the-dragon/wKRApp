@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*.pyc
 
 # C extensions
 *.so
@@ -8,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
+venv/
 build/
 develop-eggs/
 dist/
@@ -50,8 +52,10 @@ coverage.xml
 # Django stuff:
 *.log
 
+# Sublime stuff:
+*.swp
+
 # Sphinx documentation
 docs/_build/
 
 # PyBuilder
-target/

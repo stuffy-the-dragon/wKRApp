@@ -17,11 +17,9 @@ wsgiref==0.1.2
 functools==0.5
 sql==0.4.0
 Mako==1.0.0
-SQLAlchemy==0.9.4
 WTForms==2.0.1
 alembic==0.6.6
 coverage==4.0a1
 gunicorn==19.0.0
-psycopg2==2.5.3
 py-bcrypt==0.4
 

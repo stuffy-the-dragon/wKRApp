@@ -113,6 +113,6 @@ def new_user():
 
 def connect_db():
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    db_path = os.path.join(BASE_DIR + '\db', app.database)
+    db_path = os.path.join(BASE_DIR + os.path.sep + 'db', app.database)
     return sqlite3.connect(db_path)
 
